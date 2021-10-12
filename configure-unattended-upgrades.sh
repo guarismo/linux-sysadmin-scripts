@@ -42,7 +42,7 @@ Unattended-Upgrade::SyslogEnable "true";
 Unattended-Upgrade::SyslogFacility "daemon";
 Unattended-Upgrade::Automatic-Reboot "true";
 EOF
-echo 'Unattended-Upgrade::Automatic-Reboot-Time "'$reboot_time'"' >> /etc/apt/apt.conf.d/50unattended-upgrades
+echo 'Unattended-Upgrade::Automatic-Reboot-Time "'$reboot_time'";' >> /etc/apt/apt.conf.d/50unattended-upgrades
 
 /bin/cat /etc/apt/apt.conf.d/50unattended-upgrades
 
